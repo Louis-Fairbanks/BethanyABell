@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Abril', Arial, Helvetica, serif;
+    src: url('/assets/fonts/AbrilFatface-Regular.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#index-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/bg.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+}
+#logo{
+    font-size: 2rem;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+#logo:hover{
+    opacity: 70%;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+}
+nav ul li{
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+nav ul a:hover{
+    opacity: 70%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+.embeds{
+    margin-top: 30vh;
+}
+#spotify-embed{
+    position: relative;
+    width: 50%;
+    height: 352px;
+    border-radius: 20px;
+    margin: 0 25% 0 25%;
+}
+#main-content{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2rem;
+    color: white;
+}
+#main-content button{
+    color: white;
+    font-size: 3rem;
+    border: solid 2px white;
+    padding: 1rem;
+}
+footer{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer i{
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+}
+footer i:hover{
+    background-color: aquamarine;
+    color: black;
+}
+#originals-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/originals-pic.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 65vh;
+}
+#moments-pass-embed{
+    position: absolute;
+    top: 63%;
+    bottom: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.main-header{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 12vh;
+    color: white;
+}
+.coming-soon{
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.coming-soon h2{
+    padding: 2rem;
+}
+.wavy-bg h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.wavy-bg p{
+    line-height: 3rem;
+    margin: 0 40px;
+}
+.wavy-bg a{
+    padding: 2rem;
+    border: 2px solid white;
+    color: black;
+    text-shadow: none;
+    border-radius: 100px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.wavy-bg a:hover{
+    background-color: black;
+    color: white;
+}
+.wavy-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #40b4d1 0%, #aec6ff 100%);
+    color: white;
+    text-shadow: 1px 1px teal;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+.wavy-bg img{
+    height: 40vh;
+    padding-bottom: 20px;
+}
