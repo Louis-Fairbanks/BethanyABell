@@ -2,12 +2,17 @@
     font-family: 'Abril', Arial, Helvetica, serif;
     src: url('/assets/fonts/AbrilFatface-Regular.ttf');
 }
+html, html > * {
+    overflow-x: hidden;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
 }
 #index-body{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/BethanyB_ILCE-7RM5_0252.jpg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +22,7 @@ nav{
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 6%;
     align-items: center;
 }
 #logo{
@@ -54,29 +59,45 @@ button:hover{
     opacity: 70%;
 }
 .embeds{
-    margin-top: 30vh;
+    margin: 5vh auto 15vh auto;
+    text-align: center;
 }
-#spotify-embed{
+.embeds > *{
+    margin: 2% 12.5%;
+}
+#spotify-embed, .tiktok-embed{
     position: relative;
-    width: 50%;
+    width: 75% !important;
     height: 352px;
     border-radius: 20px;
-    margin: 0 25% 0 25%;
+}
+.tiktok-embed iframe{
+    width: 100% !important;
 }
 #main-content{
     text-align: center;
-    margin-top: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2rem;
     color: white;
+    text-shadow: 0 0 20px black;
 }
 #main-content button{
     color: white;
     font-size: 3rem;
     border: solid 2px white;
     padding: 1rem;
+    text-shadow: 0 0 10px black;
+}
+.sans-serif-header{
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'arial', sans-serif;
 }
 footer{
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -89,9 +110,10 @@ footer i{
 footer i:hover{
     background-color: aquamarine;
     color: black;
+    cursor: pointer;
 }
 #originals-body{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/originals-pic.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/BethanyB_ILCE-7RM5_0213.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,4 +177,14 @@ footer i:hover{
 .wavy-bg img{
     height: 40vh;
     padding-bottom: 20px;
+}
+@media screen and (min-width: 721px){
+    #soundbetter-embed img{
+        transform: scale(1.5);
+    }
+}
+@media screen and (max-width: 720px){
+    nav{
+        padding: 2%;
+    }
 }
