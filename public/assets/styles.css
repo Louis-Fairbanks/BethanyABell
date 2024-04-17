@@ -254,48 +254,6 @@ footer i:hover, #linktree-embed:hover{
         font-size: 2.5rem !important;
     }
 }
-@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1400px) and (min-height: 600px) and (max-height: 1400px) {
-    #index-body {
-        background-position: 25% 50% !important; 
-    }
-}
-@media screen and (min-aspect-ratio: 735/325) and (max-width: 1000px){
-    #moments-pass-embed {
-        margin-top: -1.5rem;
-        width: 300px;
-        height: 169px;
-    }
-    .main-header{
-        font-size: 3rem;
-        margin-top: 1rem;
-    }
-    .spotify-follow-button{
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-aspect-ratio: 1/1) and (max-width: 1000px){
-    #moments-pass-embed {
-        margin-top: -1.5rem;
-        width: 300px;
-        height: 169px;
-    }
-    .main-header{
-        font-size: 3rem;
-        margin-top: 1rem;
-    }
-    .spotify-follow-button{
-        font-size: 3rem;
-    }
-}
-@media screen and (orientation: landscape) and (max-width: 1000px){
-    .coming-soon-background h1{
-        font-size: 2.5rem !important;
-    }
-    .coming-soon-background button{
-        font-size: 2rem !important;
-    }
-}
 @media screen and (max-height: 800px){
     #coming-soon-body {
         padding-bottom: 5rem;
@@ -304,11 +262,17 @@ footer i:hover, #linktree-embed:hover{
         padding-bottom: 2rem;
     }
 }
-@media screen and (max-height: 400px){
-    .coming-soon-background h1{
+@media screen and (max-height: 500px){
+    #main-content h1, .main-header, .coming-soon-background h1{
         font-size: 2rem !important;
     }
-    .coming-soon-background button{
+    #main-content button, .coming-soon-background button{
         font-size: 1.5rem !important;
+    }
+    .main-header{
+        margin-top: 1rem;
+    }
+    #moments-pass-embed{
+        height: 200px !important;
     }
 }
